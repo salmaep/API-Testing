@@ -8,7 +8,7 @@ public class GetUserByIdTest {
     private static final String BASE_URL = "https://dummyapi.io/data/v1/";
     private static final String APP_ID = "6635f6c123256272eaba3b31";
 
-    private static final String APP_ID_SARA = "6636fef4db669f46cd93fe05";
+    private static final String APP_ID_SARA = "663708b31bd9c598267d1df0";
     private static final String USER_ID = "60d0fe4f5311236168a109ca";
 
     @Test
