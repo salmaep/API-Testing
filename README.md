@@ -59,16 +59,16 @@ API-Testing
 └─ gradlew.bat
 ```
 
-* `src>test>java>api>testing` <br/>
-  Direktori ini digunakan untuk menyimpan file test `.java` atau program test java yang akan dijalankan, yang terdiri dari 4 file test program yaitu :<br/>
-  1. CreateUserTest.java <br/>
-     File ini berisikan class Create User Test yang memuat script API testing untuk 5 method test case yang diuji.
-  2. DeleteUserTest.java <br/>
-     File ini berisikan class Delete User Test yang memuat script API testing untuk 5 method test case yang diuji.
-  3. GetUserTest.java <br/>
-     File ini berisikan class Get User Test yang memuat script API testing untuk 5 method test case yang diuji.
-  4. UpdateUserTest.java <br/>
-     File ini berisikan class Update User Test yang memuat script API testing untuk 5 method test case yang diuji.
+`src>test>java>api>testing` <br/>
+Direktori ini digunakan untuk menyimpan file test `.java` atau program test java yang akan dijalankan, yang terdiri dari 4 file test program yaitu :<br/>
+1. CreateUserTest.java <br/>
+   File ini berisikan class Create User Test yang memuat script API testing untuk 5 method test case yang diuji.
+2. DeleteUserTest.java <br/>
+   File ini berisikan class Delete User Test yang memuat script API testing untuk 5 method test case yang diuji.
+3. GetUserTest.java <br/>
+   File ini berisikan class Get User Test yang memuat script API testing untuk 5 method test case yang diuji.
+4. UpdateUserTest.java <br/>
+   File ini berisikan class Update User Test yang memuat script API testing untuk 5 method test case yang diuji.
 
 ## Run Automation Test
 Terdapat 2 cara untuk menjalankan automation test
