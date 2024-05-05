@@ -8,7 +8,7 @@ public class DeleteUserTest {
     private static final String BASE_URL = "https://dummyapi.io/data/v1/";
     private static final String APP_ID = "6635f6c123256272eaba3b31";
     private static final String USER_ID = "60d0fe4f5311236168a109ca";
-    private static final String APP_ID_SARA = "66370b541bd9c5645a7d1dfa";   
+    private static final String APP_ID_SARA = "663712711bd9c51b097d1e19";   
 
     @org.junit.jupiter.api.Test
     public void testForbiddenAppIdMissing() {

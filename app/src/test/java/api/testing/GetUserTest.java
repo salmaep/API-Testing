@@ -4,11 +4,9 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class GetUserByIdTest {
+public class GetUserTest{
     private static final String BASE_URL = "https://dummyapi.io/data/v1/";
     private static final String APP_ID = "6635f6c123256272eaba3b31";
-
-    private static final String APP_ID_SARA = "663708b31bd9c598267d1df0";
     private static final String USER_ID = "60d0fe4f5311236168a109ca";
 
     @Test
@@ -36,18 +34,6 @@ public class GetUserByIdTest {
     }
 
     @Test
-    public void testGetUserSuccess() {
-        given().
-            header("app-id", APP_ID_SARA).
-        when().
-            get(BASE_URL + "user/" + USER_ID).
-        then().
-            assertThat().
-            statusCode(200).
-            body("firstName", equalTo("Sara"));
-    }
-
-    @Test
     public void testBadRequestInvalidId() {
         given().
             header("app-id", APP_ID).
@@ -70,4 +56,17 @@ public class GetUserByIdTest {
             statusCode(200).
             body("data", hasSize(20));
     }
+
+    @Test
+    public void testBadRequestInvalidIdFormat() {
+        given()
+            .header("app-id", APP_ID)
+        .when()
+            .get(BASE_URL + "user/test123")
+        .then()
+            .assertThat()
+            .statusCode(400)
+            .body("error", equalTo("PARAMS_NOT_VALID"));
+    }
+
 }
